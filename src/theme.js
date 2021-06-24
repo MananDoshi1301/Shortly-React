@@ -1,8 +1,12 @@
 // const breakpoints = ['23.43em', '45.62em', '67.81em', '90em'];
 
 const breakpoints = ['23.43em', '90em'];
+breakpoints.sm = breakpoints[0];
+breakpoints.lg = breakpoints[1];
 
-const fontWeight = [500, 700]
+const fontWeights = [500, 700];
+
+const fontSizes = [0, 15]
 
 const space = [0, 4, 8, 16, 32, 64, 128, 256, 512];
 
@@ -19,8 +23,9 @@ const colors = {
 const utilities = {
     breakpoints,
     colors,
-    fontWeight,
+    fontWeights,
     space,
+    fontSizes,
 }
 
 export default utilities
