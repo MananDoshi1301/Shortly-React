@@ -2,15 +2,19 @@ import React from "react";
 import { ThemeProvider } from 'styled-components';
 import theme from './theme';
 import Home from './Components/Home/Home';
-import {color} from 'styled-system';
+import styled from 'styled-components';
 
 function App() {
+  const Box = styled.div `
+    font-family: 'Poppins', sans-serif;
+  `
   return (
     <ThemeProvider theme={theme}>
+      <Box>
       <div className="App">
-        {/* <Home /> */}
-        <div color="themeRed">Theme</div>
+        <Home />        
       </div>
+      </Box>
     </ThemeProvider>
 
   );
