@@ -2,26 +2,43 @@ import React from 'react'
 import styled from 'styled-components'
 import BannerContent from './BannerContent/BannerContent'
 import BannerImage from './BannerImage/BannerImage'
-import {width } from 'styled-system'
+import {layout} from 'styled-system'
 
 const Banner = () => {
     const Box = styled.div`        
         display: flex;
         flex-wrap: wrap;
     `
-    const FlexItem = styled.div `
-        ${width}
+    const FlexContent = styled.div `        
+        ${layout}
+        @media (min-width: 48em){
+            width: 50%;
+        }
+        @media (max-width: 48em){
+            order: 1;
+        }
     `;
+
+    const FlexImage = styled.div `        
+        ${layout}
+        @media (min-width: 48em){
+            width: 50%;
+        }
+        @media (max-width: 48em){
+            order: 0;
+        }
+    `;
+
 
     return (
         <div>
             <Box>
-                <FlexItem width={[1, 1]}>
+                <FlexContent>
                     <BannerContent />
-                </FlexItem>
-                <FlexItem width={[1, 1]}>
+                </FlexContent>
+                <FlexImage>
                     <BannerImage />
-                </FlexItem>
+                </FlexImage>
             </Box>
         </div>
     )
