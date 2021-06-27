@@ -12,12 +12,10 @@ const space = [0, 4, 8, 16, 32, 64, 128, 256, 512];
 
 const colors = {
     themeBlue: '#2ACFCF',
-        themeViolet: '#3B3054',
-        themeRed: '#F46262',
-        themeGray: '#BFBFBF',
-        themeDarkGray: '#9E9AA7',
-        themeLightBlack: '#35323E',
-        themeDarkBlack: '#232127',
+    themeViolet: '#3B3054',
+    themeRed: '#F46262', 
+    themeGray: ['#BFBFBF', '#9E9AA7'],        
+    themeBlack: ['#35323E','#232127'],        
 };
 
 const utilities = {
